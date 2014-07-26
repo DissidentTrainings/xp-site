@@ -33,9 +33,7 @@ var showPractice = function(practiceName) {
 };
 
 var addPracticeToModal = function(practice) {
-
     var result = index.search('AcceptanceTests');
-
     console.log(practice, lunr);
 };
 
@@ -49,14 +47,6 @@ $('#random').click(function() {
     console.log(numberPractices, randomNumber);
     loadPractice(practices[randomNumber]);
 });
-
-$('#all').click(function() {
-    async.each(practices, addPracticeToModal);
-    $('#myModal').modal({show:true});
-});
-
-
-
 
 
 
