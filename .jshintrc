@@ -17,5 +17,9 @@
     "strict": false,
     "trailing": true,
     "smarttabs": true,
-    "jquery": true
+    "jquery": true,
+    "predef": {
+        "async": true,
+        "lunr": true
+    }
 }

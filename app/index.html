@@ -24,13 +24,15 @@
         <!-- build:js scripts/vendor/lunr.js -->
         <script src="../bower_components/lunr.js/lunr.js"></script>
         <!-- endbuild -->
+        <!-- build:js scripts/vendor/showdown.js -->
+        <script src="../bower_components/showdown/compressed/showdown.js"></script>
+        <!-- endbuild -->
 
     </head>
     <body>
         <!--[if lt IE 10]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
 
         <div class="container">
             <div class="header">
@@ -41,38 +43,35 @@
                 </ul>
                 <h3 class="text-muted">The XP Practices</h3>
             </div>
+            <p>
+                <a id="random" class="btn btn-lg btn-success" href="#">Random!</span></a>
+                <a id="all" class="btn btn-lg btn-success" href="#">All</span></a>
+            </p>
+
 
             <div class="jumbotron">
-                <h1>Test Driven Development</h1>
-                <p class="lead">Always a pleasure scaffolding your apps.</p>
-                <p><a id="random" class="btn btn-lg btn-success" href="#">Random!<span class="glyphicon glyphicon-ok"></span></a></p>
             </div>
 
-            <div class="row marketing">
-                <div class="col-lg-6">
-                    <h4>HTML5 Boilerplate</h4>
-                    <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
-
-                    <h4>Sass</h4>
-                    <p>Sass is a mature, stable, and powerful professional grade CSS extension language.</p>
-
-
-                    <h4>Bootstrap</h4>
-                    <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
-
-                    <h4>Modernizr</h4>
-                    <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
-
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                  </div>
+                  <div class="modal-body"></div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
                 </div>
+              </div>
             </div>
 
             <div class="footer">
-                <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+                <p><span class="glyphicon glyphicon-heart"></span> Site by Sebastian Schürmann</p>
             </div>
-
         </div>
-
-
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
         <script src="../bower_components/jquery/dist/jquery.js"></script>
